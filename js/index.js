@@ -56,11 +56,11 @@ navItems[5].textContent = 'Contact';
 // navItems[4].setAttribute('nav-item-5', siteContent['nav'][4]);
 // navItems[5].setAttribute('nav-item-6', siteContent['nav'][5]);
 
-console.log(navItems[0]);
-
-
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let topContent = document.querySelector('.cta-text h1');
+topContent.textContent = 'DOM IS AWESOME';
 
 
 
