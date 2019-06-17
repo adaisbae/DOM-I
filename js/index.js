@@ -63,7 +63,6 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let headContent = document.querySelector('.cta-text h1');
 headContent.innerHTML = 'DOM<br>IS<br>AWESOME<br>';
-headContent.setAttribute('white-space', 'pre');
 
 let headContentButton = document.querySelector('.cta-text button');
 headContentButton.textContent = 'Get Started';
@@ -74,7 +73,16 @@ headContentImg.setAttribute('src', siteContent["cta"]["img-src"])
 
 // MAIN CONTENT
 
+let mainContentHeader = document.querySelectorAll('.text-content h4');
+mainContentHeader[0].textContent = siteContent['main-content']['features-h4'];
+mainContentHeader[1].textContent = siteContent['main-content']['about-h4'];
+mainContentHeader[2].textContent = siteContent['main-content']['services-h4'];
+mainContentHeader[3].textContent = siteContent['main-content']['product-h4'];
+mainContentHeader[4].textContent = siteContent['main-content']['vision-h4'];
 
-
-
-
+let mainContentText = document.querySelectorAll('.text-content p');
+mainContentText[0].textContent = siteContent['main-content']['features-content'];
+mainContentText[1].textContent = siteContent['main-content']['about-content'];
+mainContentText[2].textContent = siteContent['main-content']['services-content'];
+mainContentText[3].textContent = siteContent['main-content']['product-content'];
+mainContentText[4].textContent = siteContent['main-content']['vision-content'];
