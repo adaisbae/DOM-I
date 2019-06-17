@@ -37,7 +37,7 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
+// NAVIGATION
 
 const navItems = document.querySelectorAll('nav a');
 // one way I added nav items text
@@ -59,8 +59,11 @@ navItems[5].textContent = 'Contact';
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+// TOP CONTENT - HEADER / BUTTON / LOGO
+
 let topContent = document.querySelector('.cta-text h1');
-topContent.textContent = 'DOM IS AWESOME';
+topContent.textContent = 'DOM \n IS \n AWESOME \n';
+topContent.setAttribute('white-space', 'pre');
 
 let topContentButton = document.querySelector('.cta-text button');
 topContentButton.textContent = 'Get Started';
