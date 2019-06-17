@@ -39,6 +39,24 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 
+const navItems = document.querySelectorAll('nav a');
+// one way I added nav items text
+navItems[0].textContent = 'Services';
+navItems[1].textContent = 'Product';
+navItems[2].textContent = 'Vision';
+navItems[3].textContent = 'Features';
+navItems[4].textContent = 'About';
+navItems[5].textContent = 'Contact';
+
+// 2nd way to add nav items text - why is the class name "undefined"? did not set the text
+// navItems[0].setAttribute('nav-item-1', siteContent['nav'][0]);
+// navItems[1].setAttribute('nav-item-2', sitecontent['nav'][1]);
+// navItems[2].setAttribute('nav-item-3', siteContent['nav'][2]);
+// navItems[3].setAttribute('nav-item-4', siteContent['nav'][3]);
+// navItems[4].setAttribute('nav-item-5', siteContent['nav'][4]);
+// navItems[5].setAttribute('nav-item-6', siteContent['nav'][5]);
+
+console.log(navItems[0]);
 
 
 let logo = document.getElementById("logo-img");
