@@ -65,5 +65,8 @@ topContent.textContent = 'DOM IS AWESOME';
 let topContentButton = document.querySelector('.cta-text button');
 topContentButton.textContent = 'Get Started';
 
+let topContentImg = document.getElementById("cta-img");
+topContentImg.setAttribute('src', siteContent["cta"]["img-src"])
+
 
 
