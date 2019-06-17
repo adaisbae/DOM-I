@@ -61,15 +61,20 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // TOP CONTENT - HEADER / BUTTON / LOGO
 
-let topContent = document.querySelector('.cta-text h1');
-topContent.textContent = 'DOM \n IS \n AWESOME \n';
-topContent.setAttribute('white-space', 'pre');
+let headContent = document.querySelector('.cta-text h1');
+headContent.innerHTML = 'DOM<br>IS<br>AWESOME<br>';
+headContent.setAttribute('white-space', 'pre');
 
-let topContentButton = document.querySelector('.cta-text button');
-topContentButton.textContent = 'Get Started';
+let headContentButton = document.querySelector('.cta-text button');
+headContentButton.textContent = 'Get Started';
 
-let topContentImg = document.getElementById("cta-img");
-topContentImg.setAttribute('src', siteContent["cta"]["img-src"])
+let headContentImg = document.getElementById("cta-img");
+headContentImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+
+// MAIN CONTENT
+
+
 
 
 
