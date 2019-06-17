@@ -62,5 +62,8 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 let topContent = document.querySelector('.cta-text h1');
 topContent.textContent = 'DOM IS AWESOME';
 
+let topContentButton = document.querySelector('.cta-text button');
+topContentButton.textContent = 'Get Started';
+
 
 
