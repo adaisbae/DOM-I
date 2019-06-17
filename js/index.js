@@ -39,7 +39,7 @@ const siteContent = {
 
 // NAVIGATION
 
-const navItems = document.querySelectorAll('nav a');
+let navItems = document.querySelectorAll('nav a');
 // one way I added nav items text
 navItems[0].textContent = 'Services';
 navItems[1].textContent = 'Product';
@@ -47,6 +47,14 @@ navItems[2].textContent = 'Vision';
 navItems[3].textContent = 'Features';
 navItems[4].textContent = 'About';
 navItems[5].textContent = 'Contact';
+navItems[0].color = 'green';
+
+// one way to get nav items to turn green - each individual item
+// navItems[0].style.color = 'green';
+
+// using .forEach
+navItems.forEach(nav => nav.style.color = 'green');
+
 
 // 2nd way to add nav items text - why is the class name "undefined"? did not set the text
 // navItems[0].setAttribute('nav-item-1', siteContent['nav'][0]);
