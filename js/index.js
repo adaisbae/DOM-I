@@ -86,3 +86,6 @@ mainContentText[1].textContent = siteContent['main-content']['about-content'];
 mainContentText[2].textContent = siteContent['main-content']['services-content'];
 mainContentText[3].textContent = siteContent['main-content']['product-content'];
 mainContentText[4].textContent = siteContent['main-content']['vision-content'];
+
+let mainContentImg = document.getElementById("middle-img");
+mainContentImg.setAttribute('src', 'img/mid-page-accent.jpg');
