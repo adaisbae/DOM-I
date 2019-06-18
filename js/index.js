@@ -37,6 +37,78 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
+// NAVIGATION
+
+let navItems = document.querySelectorAll('nav a');
+// one way I added nav items text
+navItems[0].textContent = 'Services';
+navItems[1].textContent = 'Product';
+navItems[2].textContent = 'Vision';
+navItems[3].textContent = 'Features';
+navItems[4].textContent = 'About';
+navItems[5].textContent = 'Contact';
+navItems[0].color = 'green';
+
+// one way to get nav items to turn green - each individual item
+// navItems[0].style.color = 'green';
+
+// using .forEach
+navItems.forEach(nav => nav.style.color = 'green');
+
+
+// 2nd way to add nav items text - why is the class name "undefined"? did not set the text
+// navItems[0].setAttribute('nav-item-1', siteContent['nav'][0]);
+// navItems[1].setAttribute('nav-item-2', sitecontent['nav'][1]);
+// navItems[2].setAttribute('nav-item-3', siteContent['nav'][2]);
+// navItems[3].setAttribute('nav-item-4', siteContent['nav'][3]);
+// navItems[4].setAttribute('nav-item-5', siteContent['nav'][4]);
+// navItems[5].setAttribute('nav-item-6', siteContent['nav'][5]);
+
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// TOP CONTENT - HEADER / BUTTON / LOGO
+
+let headContent = document.querySelector('.cta-text h1');
+headContent.innerHTML = 'DOM<br>IS<br>AWESOME<br>';
+
+let headContentButton = document.querySelector('.cta-text button');
+headContentButton.textContent = 'Get Started';
+
+let headContentImg = document.getElementById("cta-img");
+headContentImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+
+// MAIN CONTENT
+
+let mainContentHeader = document.querySelectorAll('.text-content h4');
+mainContentHeader[0].textContent = siteContent['main-content']['features-h4'];
+mainContentHeader[1].textContent = siteContent['main-content']['about-h4'];
+mainContentHeader[2].textContent = siteContent['main-content']['services-h4'];
+mainContentHeader[3].textContent = siteContent['main-content']['product-h4'];
+mainContentHeader[4].textContent = siteContent['main-content']['vision-h4'];
+
+let mainContentText = document.querySelectorAll('.text-content p');
+mainContentText[0].textContent = siteContent['main-content']['features-content'];
+mainContentText[1].textContent = siteContent['main-content']['about-content'];
+mainContentText[2].textContent = siteContent['main-content']['services-content'];
+mainContentText[3].textContent = siteContent['main-content']['product-content'];
+mainContentText[4].textContent = siteContent['main-content']['vision-content'];
+
+let mainContentImg = document.getElementById("middle-img");
+mainContentImg.setAttribute('src', 'img/mid-page-accent.jpg');
+
+// CONTACT
+
+let contactHeader = document.querySelector('.contact h4');
+contactHeader.textContent = siteContent['contact']['contact-h4'];
+
+let contactText = document.querySelectorAll('.contact p');
+contactText[0].textContent = siteContent['contact']['address'];
+contactText[1].textContent = siteContent['contact']['phone'];
+contactText[2].textContent = siteContent['contact']['email'];
+
+// FOOTER 
+
+let footerText = document.querySelector('footer p');
+footerText.textContent = siteContent['footer']['copyright'];
