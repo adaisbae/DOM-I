@@ -54,11 +54,17 @@ const siteContent = {
   //changed nav items to green
   navItems.forEach(nav => nav.style.color = 'green');
 
+  //appendChild
   let skills = document.createElement('a');
   let navText = document.createTextNode('Skills')
   skills.appendChild(navText)
   document.querySelector('nav').appendChild(skills)
 
+  //prepend
+  let name = document.createElement('a')
+  let nameText = document.createTextNode('Melissa')
+  name.appendChild(nameText)
+document.querySelector('nav').prepend(name)
 
 let ctaText = document.querySelector('.cta-text h1')
 ctaText.innerHTML = 'DOM<br>Is<br>Awesome<br>';
