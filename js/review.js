@@ -41,7 +41,7 @@ const siteContent = {
   let logo = document.getElementById("logo-img");
   logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-  //navigation
+
 
   let navItems = document.querySelectorAll('nav a');
   navItems[0].textContent = 'Services';
@@ -84,3 +84,6 @@ let contactInfo = document.querySelectorAll('.contact p');
 contactInfo[0].textContent = siteContent['contact']['address'];
 contactInfo[1].textContent = siteContent['contact']['phone'];
 contactInfo[2].textContent = siteContent['contact']['email'];
+
+let footer = document.querySelector('footer p');
+footer.textContent = siteContent['footer']['copyright'];
