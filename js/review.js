@@ -52,7 +52,7 @@ const siteContent = {
   navItems[5].textContent = 'Contact';
 
 let ctaText = document.querySelector('.cta-text h1')
-ctaText.textContent = 'DOM Is Awesome';
+ctaText.innerHTML = 'DOM<br>Is<br>Awesome<br>';
 
 let ctaButton = document.querySelector('.cta-text button')
 ctaButton.textContent = 'Get Started';
@@ -76,3 +76,11 @@ mainText[1].textContent = siteContent['main-content']['about-content'];
 mainText[2].textContent = siteContent['main-content']['services-content'];
 mainText[3].textContent = siteContent['main-content']['product-content'];
 mainText[4].textContent = siteContent['main-content']['vision-content'];
+
+let contactHeader = document.querySelector('.contact h4');
+contactHeader.textContent = siteContent['contact']['contact-h4'];
+
+let contactInfo = document.querySelectorAll('.contact p');
+contactInfo[0].textContent = siteContent['contact']['address'];
+contactInfo[1].textContent = siteContent['contact']['phone'];
+contactInfo[2].textContent = siteContent['contact']['email'];
