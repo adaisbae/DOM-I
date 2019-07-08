@@ -44,12 +44,15 @@ const siteContent = {
   //navigation
 
   let navItems = document.querySelectorAll('nav a');
-  navItems[0].textContent = 'Services'
-  navItems[1].textContent = 'Product'
-  navItems[2].textContent = 'Vision'
-  navItems[3].textContent = 'Features'
-  navItems[4].textContent = 'About'
-  navItems[5].textContent = 'Contact'
+  navItems[0].textContent = 'Services';
+  navItems[1].textContent = 'Product';
+  navItems[2].textContent = 'Vision';
+  navItems[3].textContent = 'Features';
+  navItems[4].textContent = 'About';
+  navItems[5].textContent = 'Contact';
 
 let ctaText = document.querySelector('.cta-text h1')
-ctaText.textContent = 'DOM Is Awesome'
+ctaText.textContent = 'DOM Is Awesome';
+
+let ctaButton = document.querySelector('.cta-text button')
+ctaButton.textContent = 'Get Started';
