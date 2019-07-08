@@ -51,3 +51,5 @@ const siteContent = {
   navItems[4].textContent = 'About'
   navItems[5].textContent = 'Contact'
 
+let ctaText = document.querySelector('.cta-text h1')
+ctaText.textContent = 'DOM Is Awesome'
