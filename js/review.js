@@ -51,6 +51,9 @@ const siteContent = {
   navItems[4].textContent = 'About';
   navItems[5].textContent = 'Contact';
 
+  //changed nav items to green
+  navItems.forEach(nav => nav.style.color = 'green');
+
 let ctaText = document.querySelector('.cta-text h1')
 ctaText.innerHTML = 'DOM<br>Is<br>Awesome<br>';
 
