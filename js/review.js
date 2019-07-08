@@ -59,3 +59,20 @@ ctaButton.textContent = 'Get Started';
 
 let ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute('src', siteContent['cta']['img-src'])
+
+let mainHeaders = document.querySelectorAll('.text-content h4')
+mainHeaders[0].textContent = siteContent['main-content']['features-h4'];
+mainHeaders[1].textContent = siteContent['main-content']['about-h4'];
+mainHeaders[2].textContent = siteContent['main-content']['services-h4'];
+mainHeaders[3].textContent = siteContent['main-content']['product-h4'];
+mainHeaders[4].textContent = siteContent['main-content']['vision-h4'];
+
+let mainImg = document.getElementById('middle-img')
+mainImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
+
+let mainText = document.querySelectorAll('.text-content p');
+mainText[0].textContent = siteContent['main-content']['features-content'];
+mainText[1].textContent = siteContent['main-content']['about-content'];
+mainText[2].textContent = siteContent['main-content']['services-content'];
+mainText[3].textContent = siteContent['main-content']['product-content'];
+mainText[4].textContent = siteContent['main-content']['vision-content'];
